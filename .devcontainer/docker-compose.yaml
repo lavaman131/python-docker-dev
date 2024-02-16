@@ -1,0 +1,9 @@
+version: "3"
+services:
+  python-dev:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    tty: true # attaches a terminal to the container
+    volumes:
+      - ../:/workspace
